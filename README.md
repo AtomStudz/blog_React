@@ -1,13 +1,6 @@
 # Blog React
 
-## Objectif
-
 ![resultat](docs/home.png)
-
-## Instructions
-
-- Le but est de **modulariser** le code au maximum via des composants React, mais aussi en créant des fichiers de styles séparés.
-- Les data sont déjà fournies dans `src/data`, à vous de passer des props :wink:
 
 ## Charte graphique
 
@@ -38,10 +31,3 @@
   - Arrière plan : `#101010`
   - Couleur : `#ddd`
 
-## Bonus
-
-Préparer un composant `NotFound` pour le cas d'une page 404, du genre :
-
-![resultat](docs/404.png)
-
-Ne pas hésiter à enrichir un peu ce composant avec du style sympa.
