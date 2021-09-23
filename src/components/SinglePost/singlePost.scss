@@ -1,0 +1,28 @@
+@use 'src/styles/vars';
+
+.single-post {
+  padding: vars.$gutter;
+
+  .post-title {
+    font-family: vars.$title-font;
+    font-weight: vars.$title-font-weight;
+    text-transform: uppercase;
+    color: vars.$title-color;
+    margin: vars.$gutter / 2 0;
+    font-size: 2em;
+  }
+
+  .post-category {
+    background-color: vars.$primary-color;
+    color: vars.$light-color;
+    padding: 0.4em;
+    margin: 0.2em 0;
+    display: inline;
+    text-transform: uppercase;
+  }
+
+  .post-content {
+    color: vars.$post-text-color;
+    margin-top: vars.$gutter / 2;
+  }
+}

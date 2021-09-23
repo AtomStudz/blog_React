@@ -1,0 +1,16 @@
+@use 'src/styles/vars';
+
+.header {
+  text-align: center;
+  padding: vars.$gutter;
+  border-bottom: solid 1px #ddd;
+
+  .header-link {
+    margin: vars.$gutter / 2;
+    color: vars.$dark-color;
+
+    &.header-link--active, &:hover {
+      color: vars.$primary-color;
+    }
+  }
+}

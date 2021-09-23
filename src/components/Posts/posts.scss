@@ -1,0 +1,61 @@
+@use 'src/styles/vars';
+
+.posts {
+  max-width: 800px;
+  margin: vars.$gutter auto;
+  position: relative;
+
+  .title {
+    font-family: vars.$title-font;
+    font-weight: vars.$title-font-weight;
+    color: vars.$primary-color;
+    font-size: 2em;
+    margin-bottom: vars.$gutter;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .posts-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .post {
+      width: 50%;
+      padding: vars.$gutter;
+
+      .post-title {
+        font-family: vars.$title-font;
+        font-weight: vars.$title-font-weight;
+        text-transform: uppercase;
+        color: vars.$title-color;
+        margin: vars.$gutter / 2 0;
+      }
+
+      .post-category {
+        background-color: vars.$primary-color;
+        color: vars.$light-color;
+        padding: 0.4em;
+        margin: 0.2em 0;
+        display: inline;
+        text-transform: uppercase;
+      }
+
+      .post-excerpt {
+        color: vars.$post-text-color;
+        margin-top: vars.$gutter / 2;
+
+        em {
+          font-style: italic;
+        }
+
+        strong {
+          font-weight: bold;
+        }
+      }
+
+      &:hover {
+        background-color: vars.$post-hover-color;
+      }
+    }
+  }
+}

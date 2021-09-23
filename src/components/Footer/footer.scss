@@ -1,0 +1,15 @@
+@use 'src/styles/vars';
+
+.footer {
+  background-color: vars.$dark-color;
+  color: vars.$alt-color;
+  padding: vars.$gutter;
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  right: 0;
+}
+
+p {
+  text-align: center;
+}
